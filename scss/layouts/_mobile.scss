@@ -1,0 +1,99 @@
+/*--Responsive style--*/ 
+@media (max-width: 575px) {
+    .banner-section{
+        height: 265px;
+        .banner-content{
+            padding: 35px 5px;
+            h2{
+                font-size: 25px;
+            }
+        }
+    }
+    
+    .navbar{
+        .container{
+            width: 95%;
+        }
+    }
+    
+    .download{
+        a img{
+            max-width: 140px;
+        }
+    }
+    .contact-map{
+        height: 250px;
+        iframe{
+            @extend .contact-map;
+        }
+    }
+}
+
+/* Small viewport or screen */
+@media (max-width: 767px) {
+    .features{
+        .col-md-4{
+            margin-bottom: 30px;
+            &:last-child{
+                margin: 0px;
+            }
+        }
+    }
+    section .col-md-6{
+        &:nth-last-child(2){
+            margin-bottom: 30px !important;
+        }
+    }
+    .search{
+        text-align: center;
+    }
+    footer{
+        text-align: center;
+    }
+    .blockquote-reverse{
+        margin: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        h2{
+            font-size: 22px;
+        }
+    }
+}
+
+/* Medium viewport or screen */
+@media (max-width: 991px) {
+    section .col-md-6{
+        margin-bottom: 30px;
+        &:last-child, &:nth-last-child(2){
+            margin-bottom: 0px;
+        }
+    }
+    .push-down{
+        padding-top: 70px;
+    }
+    .navbar{
+        h1{
+            padding: 13px 10px;
+        }
+        button{
+            margin-top: 6px;
+        }
+        .nav-link{
+            padding: 11px 10px 10px !important;
+        }
+    }
+    .social-icons{
+        display: block;
+        .social-icon{
+            width: auto;
+            display: inline-block;
+            a{
+                display: inline-block;
+            }
+        }
+    }
+}
+
+/* Large viewport or screen */
+@media (max-width: 1199px) {
+}

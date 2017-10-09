@@ -1,0 +1,53 @@
+/*--banner section--*/
+.banner-section{
+    height: $banner-height;
+    background: url($banner-image) no-repeat top center;
+    .banner-content{
+        padding: 90px 15px;
+        h2{color: $primary-color}
+        .download{
+            a{
+                display: inline-block;
+            }
+        }
+    }
+
+}
+
+
+section{
+    padding: 30px 0px;
+}
+
+.section-primary{
+    @include add-background($primary-color);
+}
+.section-secondary{
+    @include add-background($secondary-color);
+}
+.section-light{
+     @include add-background($light-color);
+}
+.section-dark{
+    @include add-background($dark-color);
+}
+.section-default{
+    @include add-background($default-color);
+}
+
+.section-dark a{@include anchor-color($dark-color);}
+
+
+.push-down{padding-top: 105px }
+.section-primary-top-border{@include add-border(3px, $secondary-color, top); @extend .section-primary;}
+.section-primary-bottom-border{@include add-border(3px, $secondary-color, bottom); @extend .section-primary;}
+
+
+.block-image img{@include add-border(1px, #cccccc, all);}
+.team-section h3{margin: 0 0 10px 0;}
+
+
+.contact-map{height: 450px}
+
+
+

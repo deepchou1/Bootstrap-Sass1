@@ -1,0 +1,74 @@
+/*--list items--*/
+.list{
+    margin-bottom: 20px;
+}
+.list-feature{
+    @extend .list;
+    width: 100%;
+    li{
+        line-height: 2.2em;
+        @include add-border(1px, #cccccc, bottom);
+        padding: 10px 0 ;
+    }
+    li:last-child{
+        border: 0px;
+    }
+    span{
+        font-size: 120%;
+        padding-top: 10px;
+    }
+    i{
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+}
+
+/*--headings--*/
+.heading-primary{color: $primary-color;}
+.heading-secondary{color: $secondary-color;}
+.heading-light{color: $light-color;}
+.heading-dark{color: $dark-color;}
+.heading-default{color: $default-color;}
+
+.content-heading{
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    @include add-border(2px, $primary-color, bottom);
+    @extend .heading-primary;
+}
+
+/*--font-awesom elements--*/
+.fa-2{
+    font-size: 18px;
+}
+.fa-3{
+    font-size: 24px;
+}
+.fa-4{
+    font-size: 27px;
+}
+.fa-5{
+    font-size: 35px;
+}
+.fa-5{
+    font-size: 40px;
+}
+
+.fa-primary{
+    color: $primary-color;
+}
+.fa-rounded{
+    @include border-radius(5px);
+    @include add-border(2px, $primary-color, all);
+    padding: 10px 0;
+    width: 50px;
+}
+
+/*--Anchor--*/
+.anchor-primary{color: $primary-color;}
+.anchor-secondary{color: $secondary-color;}
+.anchor-light{color: $light-color;}
+.anchor-dark{color: $dark-color;}
+.anchor-default{color: $default-color;}
+
+

@@ -1,0 +1,20 @@
+/*---Navbar -*/
+.navbar{
+    padding: 0px;
+    background: none;
+    .container{
+        background: $default-color;
+        border-color: #e7e7e7;
+        @include add-border(1px, #e7e7e7, 'right-left');
+        @include add-border(1px, #e7e7e7, 'bottom');
+        a{
+        color: $primary-color;
+        font-size: 20px;
+        letter-spacing:0.5px;
+        padding-bottom: 24px;
+        padding-top: 20px;
+        }
+    }
+}
+.navbar li a:hover,.navbar li a:focus{background: $primary-color; color: $default-color !important;}
+.navbar li.active a{background: $primary-color; color: $default-color !important;}

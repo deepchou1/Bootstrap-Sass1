@@ -1,0 +1,54 @@
+.block{padding: 15px;}
+//.block{padding: 15px; margin-bottom: 15px;}
+.block-primary{@include add-background($primary-color);}
+.block-secondary{@include add-background($secondary-color);}
+.block-light{@include add-background($light-color);}
+.block-dark{@include add-background($dark-color);}
+.block-dafault{@include add-background($default-color);}
+
+.block-image{
+    @include add-border(1px, #cccccc, all);
+    @include border-radius(5px);
+}
+
+.block-primary-head{
+    @include add-border(1px, $primary-color,all);
+    h3{
+        padding: 10px 15px 15px;
+        color: $default-color;
+        background: $primary-color;
+        font-size: 18px;
+    }
+    .block-content{
+        padding: 15px 15px;
+    }
+}
+
+.block-secondary-head{
+    @include add-border(1px, $secondary-color,all);
+}
+.block-light-head{
+    @include add-border(1px, $light-color,all);
+}
+.block-dark-head{
+    @include add-border(1px, $dark-color,all);
+}
+.block-default-head{
+    @include add-border(1px, $default-color,all);
+}
+
+/*--services--*/
+.block-icon{
+    .icon{
+        float: left;
+        width: 17%;
+        margin: 15px 0 0 0;
+    }
+    .icon-content{
+        float: right;
+        width: 81%;
+        p{
+            text-align: justify
+        }
+    }
+}

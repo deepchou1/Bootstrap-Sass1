@@ -1,0 +1,9 @@
+/*--Footer--*/
+footer{
+    @include add-border(3px, $secondary-color, top);
+    text-transform: capitalize;
+    padding: 30px 0 15px;
+    .footer-heading{
+        margin-bottom: 15px;
+    }
+}

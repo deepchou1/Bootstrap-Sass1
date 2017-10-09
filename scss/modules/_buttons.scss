@@ -1,0 +1,9 @@
+.btn-primary{
+    background: $primary-color;
+    @include border-radius(5px);
+    @include add-border(1px, $primary-color, all);
+    &:hover,&:focus{
+        background: darken($primary-color, 10%);
+        @include add-border(1px, darken($primary-color, 10%), all);
+    }
+}

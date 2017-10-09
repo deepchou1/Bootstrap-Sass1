@@ -1,0 +1,48 @@
+/*--Carousel--*/
+.carousel{
+    @include add-border(3px, $primary-color, all);
+    @include border-radius(5px);
+    background: $default-color;
+    .carousel-indicators li{
+        background: $default-color;
+        &.active{
+            background: $primary-color;
+        }
+    }
+}
+
+#accordion{
+    a{
+        color: $primary-color !important;
+    }
+}
+
+/*--blockquote--*/
+.blockquote{
+    footer{
+        padding: 0px; margin: 0px; border: 0px;color: $default-color !important;
+        &::after{
+        content: none !important;
+        }
+    }
+}
+
+
+.tab-primary{
+    ul{
+        li{
+            a{
+                border: 0px !important;
+                &.active{
+                background: $primary-color !important;
+                color:#ffffff !important;
+                }
+            }
+        }
+    }
+    .tab-content{
+    padding: 10px 15px;
+    @include border-radius(0 0 5px 5px);
+        
+    }
+}

@@ -1,0 +1,14 @@
+/* SASS Bootstrap theme
+Author : Deepshikha
+*/
+
+/* BASE - Base style, variables, mixins etc. */
+@import 'base/_base-dir.scss';
+
+
+/* MODULES - individual site components */
+@import 'modules/_modules-dir.scss';
+
+
+/* LAYOUT - page layout styles */
+@import 'layouts/_layouts-dir.scss';

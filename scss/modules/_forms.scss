@@ -1,0 +1,40 @@
+form{
+    .form-group{
+        margin-bottom: 10px;
+    }
+    input{
+        font-size: 15px !important;
+        &[type="submit"]{
+            
+        }
+        &[type="search"]{
+            width: 80%;
+            padding: 7px 10px;
+        }
+        &.form-element-border{
+            @include add-border(2px, $primary-color, all);
+        }
+        &.br-t-l{
+            @include border-radius(5px 0 0 5px);
+        }
+    }
+    textarea{
+        
+    }
+    button{
+        background: $primary-color;
+        color: $default-color;
+        cursor: pointer;
+        &.form-element-border{
+            @include add-border(2px, $primary-color, all);
+            padding: 7px;
+        }
+        &.br-b-r{
+            @include border-radius(0 5px 5px 0);
+        }
+    }
+    label{
+        width: 100%;
+    }
+}
+

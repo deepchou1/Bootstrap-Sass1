@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyApp-Contact</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <h1 class="navbar-brand"><a href="index.html">MyApp</a></h1>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                      </li>
+                      <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                      </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-sub pull-right-md social-icons">
+                        <li class="nav-item social-icon">
+                            <a class="nav-link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item social-icon">
+                            <a class="nav-link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item social-icon">
+                            <a class="nav-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item social-icon">
+                            <a class="nav-link" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                  </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="search section-light push-down">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-9 col-lg-6">
+                    <form class="search-form">
+                        <input type="search" placeholder="Search our website and products" class="form-element-border br-t-l" /><button type="submit" value=" " class="text-center form-element-border br-b-r"><i class="fa fa-search fa-3" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-md-3 col-lg-6">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="main-page-heading section-primary-top-border">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="page-heading">Contact Us</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="page-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-lg-8">                    
+                    <h3 class="content-heading">Contact Us</h3>
+                    <form class="contact-form">
+                       <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="fname-input">First Name</label>
+                            <input type="text" class="form-control" id="fname-input" placeholder="Enter First Name" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lname-input">Last Name</label>
+                            <input type="text" class="form-control" id="lname-input" placeholder="Enter Last Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="phone-input">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone-input" placeholder="Enter Phone" pattern="^\d{4}-\d{3}-\d{4}$" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email-input">Email Address</label>
+                            <input type="email" class="form-control" id="email-input" placeholder="Enter Email" required>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="comment-textarea">Add Comment</label>
+                            <textarea class="form-control" id="comment-textarea" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-4 mb-lg-0 ml-3">Submit</button>
+                        </div>
+                    </form>   
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                    <div class="block-primary-head">
+                        <h3><i class="fa fa-pencil" aria-hidden="true"></i> Our Locations</h3>
+                        <div class="block-content">
+                            <span>Copenhagen, Denmark<br/>
+                            Pin code: 2100<br/>
+                            Near Meny</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact-map no-pad">
+       <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.781552009901!2d12.56412621565335!3d55.710168780541956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46525258c8f9202d%3A0xd5cd69c04ad82f72!2sSankt+Kjelds+Gade+32%2C+2100+K%C3%B8benhavn+%C3%98!5e0!3m2!1sen!2sdk!4v1506828540453" style="height: 450px" allowfullscreen></iframe>
+        </div>
+    </section>
+    
+    <section class="features text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                   <div class="block block-light">
+                        <i class="fa fa-html5 fa-primary fa-rounded fa-4 mb-2" aria-hidden="true"></i>
+                        <h4 class="heading-primary">Lorem Ipsum 1</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                   <div class="block block-light">
+                        <i class="fa fa-pie-chart fa-primary fa-rounded fa-4 mb-2" aria-hidden="true"></i>
+                        <h4 class="heading-primary">Lorem Ipsum 2</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                   <div class="block block-light">
+                        <i class="fa fa-unlock-alt fa-primary fa-rounded fa-4 mb-2" aria-hidden="true"></i>
+                        <h4 class="heading-primary">Lorem Ipsum 3</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                   <div class="block block-light">
+                        <i class="fa fa-question-circle fa-primary fa-rounded fa-4 mb-2" aria-hidden="true"></i>
+                        <h4 class="heading-primary">Lorem Ipsum 4</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="section-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h3 class="footer-heading">Get the MyApp</h3>
+                    <ul class="footer-list">
+                        <li><a href="#">App store</a></li>
+                        <li><a href="#">Google play store</a></li>
+                        <li><a href="#">Android Market</a></li>
+                        <li><a href="#">Windows</a></li>
+                        <li><a href="#">Google Chrome store</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h3 class="footer-heading">About</h3>
+                    <ul class="footer-list">
+                        <li><a href="#">About 1</a></li>
+                        <li><a href="#">About 2</a></li>
+                        <li><a href="#">About 3</a></li>
+                        <li><a href="#">About 4</a></li>
+                        <li><a href="#">About 5</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h3 class="footer-heading">Support</h3>
+                    <ul class="footer-list">
+                        <li><a href="#">Support 1</a></li>
+                        <li><a href="#">Support 2</a></li>
+                        <li><a href="#">Support 3</a></li>
+                        <li><a href="#">Support 4</a></li>
+                        <li><a href="#">Support 5</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
